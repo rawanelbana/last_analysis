@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="logoicon.ico" />
+    <title>Analysis</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="analysisstyle.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Oxygen:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Start First Section -->
+    <!-- Logo part -->
+    <header class="logoPart">
+        <div class="adress">
+            <p>35 Barnard St. Brooklyn,<br> NY 10036, United States</p>
+        </div>
+        <h1 class="titleName">
+            <a href="D:\templates\Project 2020\home\home.html "><span>we</span><span
+                    style="color: #ff4345;">C</span><span>are</span></a>
+        </h1>
+        <div class="contact">
+            <p id="demo" style="display:none;">(047)&nbsp;310-9590</p>
+            <span data-toggle="tooltip" title="Click to copy" onclick="copy('demo')">(047)&nbsp;310-9590</span>
+
+            <i class="fa fa-facebook" id="pad"></i>
+            <i class="fa fa-twitter"></i>
+        </div>
+    </header>
+    <!-- Navbar part-->
+    <section class="navbarPart">
+        <nav class="navbar justify-content-center navbar-expand-sm navbarList">
+            <button id="navbartoggler" class="navbar-toggler menuStyle" type="button" data-toggle="collapse"
+                data-target="#nav">
+                <span><i class="fa fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="nav">
+                <ul class="navbar-nav text-center " style="line-height: 19px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="D:\templates\Project 2020\home/home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="analysis.html">Analysis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="D:\templates\Project 2020\home\BMI/bmi.html">BMI</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactus">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <!---- start Select section -->
+    <section>
+        <h2 class="titleText" align="center">Please Select kind of analysis</h2>
+        <select id="analysis" name="analysisName" class="form-control input-lg">
+            <option value="">Select analysis</option>
+        </select>
+        <br />
+        <select id="sub-analysis" name="subAnalysisName" class="form-control input-lg second">
+            <option value="">Select sub-analysis</option>
+        </select>
+
+        <center> <button type="submit" class="submitbtn" id="submitanalysis">Submit</button></center>
+        <br />
+    </section>
+    <!---- end Select section -->
+
+
+    <!-- start details section-->
+    <section class="detailsSection">
+        <!--The hidden div that contain the selected option-->
+        <div id="selected" class="d-none"></div>
+        <!--Div contain the header and the form-->
+        <div class="name" id="formDetails">
+            <h2 class="titleText fill" align="center">Please fill the following</h2>
+            <form class="formApp" action="" method="">
+                <div>Select your gender</div>
+                <input type="radio" id="male" name="sex"><label for="male"> Male</label>
+                <input type="radio" id="female" name="sex"><label for="female"> Female</label>
+                <div>Enter your age</div>
+                <input type="text" id="oldage" placeholder="Enter your age" /><span class="mu">Year</span>
+                <div>Enter your result</div>
+                <input type="text" id="valueofresult" placeholder="Enter the result" name="" /><span
+                    class="mu">U/L</span>
+                <div><button type="submit" class="submitbtn">Submit</button>
+            </form>
+        </div>
+
+    </section>
+    <!-- end details section-->
+
+
+    <!--Start footer-->
+    <footer id="contactus">
+        <div>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+        </div>
+        <span>
+            &copy;KFS-university. All rights reserved.
+        </span>
+    </footer>
+    <!--End footer-->
+
+
+    <!-- Script part-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/analysis.js"></script>
+</body>
+
+</html>
